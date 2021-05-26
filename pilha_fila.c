@@ -18,9 +18,10 @@ int main(){
                     break;        
             }else{
                 if (strcmp(acoes,"INSERE") == 0){           
-                    if (cont < M){       
-                                                
-                        pilha[cont] = cont_num+1;
+                    if (cont < M){ 
+                        int valor=0;
+                        scanf("%d",&valor);                                                      
+                        pilha[cont] = valor;
                         cont_num = cont_num + 1;
                         cont = cont+1;                            
                     }else{
@@ -57,14 +58,16 @@ int main(){
                     break;        
             }else{         
                 if (strcmp(acoes,"INSERE") == 0){   
+                    int valor=0;
+                    scanf("%d",&valor);
                     if (cont < M && fila[cont] == 0){                                                       
-                        fila[cont] = cont_num+1;
+                        fila[cont] = valor;
                         cont_num = cont_num +1;
                         cont = cont+1;                            
                     }else{                                        
                         if (cont == M && fila[0]== 0){
                             cont = 0;
-                            fila[cont] = cont_num+1;
+                            fila[cont] = valor;
                             cont_num = cont_num +1;
                             cont = cont+1;                      
                             
