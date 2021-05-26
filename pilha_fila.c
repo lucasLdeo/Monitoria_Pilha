@@ -14,7 +14,7 @@ int main(){
         while (1){
             
             scanf("%s",acoes);              
-            if (acoes[0] == '\0'){
+            if (strcmp(acoes,"Sair") == 0){
                     break;        
             }else{
                 if (strcmp(acoes,"INSERE") == 0){           
@@ -38,12 +38,6 @@ int main(){
                         }else{
                             printf("Pilha Vazia\n");
                         }
-                    }else{
-                        int i;
-                        for (i=0;i<M;i++){
-                            printf("%d ",pilha[i]);
-                        }
-                        printf("\n");
                     }
                 }
             }
@@ -54,7 +48,7 @@ int main(){
             int * fila = malloc (M * sizeof( int)); 
             while (1){            
             scanf("%s",acoes);              
-            if (acoes[0] == '\0'){
+            if (strcmp(acoes,"Sair") == 0){
                     break;        
             }else{         
                 if (strcmp(acoes,"INSERE") == 0){   
@@ -93,13 +87,7 @@ int main(){
                                 printf("Fila Vazia\n");
                             }
                         }
-                    }else{
-                        int i;
-                        for (i=0;i<M;i++){
-                            printf("%d ",fila[i]);
-                        }
-                        printf("\n");
-                    } 
+                    }
                 }                                                                    
             }              
         }
